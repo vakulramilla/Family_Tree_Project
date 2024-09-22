@@ -1,0 +1,95 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.tree-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tree {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tree li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tree li:last-child {
+    border-bottom: none;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.member h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.member p {
+    font-size: 14px;
+    color: #666;
+}
+
+.add-member-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-member-btn:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .tree-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .tree li {
+        padding: 5px;
+    }
+    .member {
+        flex-direction: column;
+        align-items: center;
+    }
+    .member img {
+        width: 30px;
+        height: 30px;
+    }
+}
