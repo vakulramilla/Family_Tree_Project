@@ -14,24 +14,31 @@ body {
 }
 
 .tree-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
 .tree {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tree li {
     position: relative;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    width: 25%;
+    margin: 10px;
 }
 
 .tree li:last-child {
@@ -42,11 +49,12 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: column;
 }
 
 .member img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -76,6 +84,9 @@ body {
 
 .add-member-form {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .add-member-form input[type="text"] {
@@ -83,13 +94,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
+    margin: 10px;
 }
 
 .add-member-form input[type="file"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+ width: 100%;
+    margin: 10px;
 }
 
 .add-member-form button[type="submit"] {
@@ -105,6 +118,96 @@ body {
     background-color: #3e8e41;
 }
 
+ /* Premium CSS Code */
+
+.tree-container {
+    background-image: linear-gradient(to bottom, #f9f9f9, #fff);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.tree li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.tree li:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.member p {
+    font-size: 14px;
+    color: #666;
+}
+
+.add-member-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-member-btn:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-member-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-member-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-member-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-member-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-member-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
  /* Responsive styles */
 
 @media (max-width: 768px) {
@@ -113,7 +216,27 @@ body {
         padding: 10px;
     }
     .tree li {
+        width: 50%;
+        margin: 10px;
+    }
+    .member {
+        flex-direction: column;
+        align-items: center;
+    }
+    .member img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tree-container {
+        margin: 10px auto;
         padding: 5px;
+    }
+    .tree li {
+        width: 100%;
+        margin: 5px;
     }
     .member {
         flex-direction: column;
