@@ -1,0 +1,57 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Family Tree</h1>
+    </header>
+    <main>
+        <div class="tree-container">
+            <ul class="tree">
+                <li class="root">
+                    <div class="member">
+                        <img src="images/john-doe.jpg" alt="John Doe">
+                        <h2>John Doe</h2>
+                        <p>Father</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="member">
+                                <img src="images/jane-doe.jpg" alt="Jane Doe">
+                                <h2>Jane Doe</h2>
+                                <p>Mother</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="member">
+                                        <img src="images/alice-doe.jpg" alt="Alice Doe">
+                                        <h2>Alice Doe</h2>
+                                        <p>Daughter</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="member">
+                                        <img src="images/bob-doe.jpg" alt="Bob Doe">
+                                        <h2>Bob Doe</h2>
+                                        <p>Son</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="add-member-btn">Add Member</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
