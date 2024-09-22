@@ -74,7 +74,38 @@ body {
     background-color: #3e8e41;
 }
 
-/* Responsive styles */
+.add-member-form {
+    margin-top: 20px;
+}
+
+.add-member-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-member-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-member-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-member-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+ /* Responsive styles */
 
 @media (max-width: 768px) {
     .tree-container {
